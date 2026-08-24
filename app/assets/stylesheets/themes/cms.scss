@@ -1,0 +1,21 @@
+@import "bootstrap/mixins";
+//////////////////////////////
+// Design-specific variables
+//////////////////////////////
+$theme-base: 'themes/blue';
+
+$primary-color: #0099ff;
+$secondary-color: #ffcc00;
+$accent-color: #eb7d29;
+
+@import "mixins/modern_base";
+
+//////////////////////////////
+// Bootstrap variable tweaks
+//////////////////////////////
+$navbar-default-color: #222;
+$navbar-default-bg: #ffcc00;
+$navbar-default-link-color: #222;
+$navbar-border-radius: 0;
+
+@import "../application";
