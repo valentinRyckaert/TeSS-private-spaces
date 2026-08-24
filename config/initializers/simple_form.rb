@@ -40,8 +40,10 @@ SimpleForm.setup do |config|
     b.optional :readonly
 
     ## Inputs
-    b.use :label_input
+    # Render the label, then the hint (placed between label and input), then the input
+    b.use :label
     b.use :hint,  wrap_with: { tag: :span, class: :hint }
+    b.use :input
     b.use :error, wrap_with: { tag: :span, class: :error }
 
     ## full_messages_for
